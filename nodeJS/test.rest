@@ -1,0 +1,31 @@
+
+GET http://localhost:8080/datas HTTP/1.1
+
+###
+
+GET http://localhost:8080/datas/101 HTTP/1.1
+
+###
+
+POST http://localhost:8080/datas HTTP/1.1
+content-type: application/x-www-form-urlencoded
+
+id=666&userName=chaloupe&age=45
+
+###
+
+POST http://localhost:5000/users HTTP/1.1
+content-type: application/json
+
+{  "firstName":"biran", "email":"toto@titi.com", "password":"toto", "level":"user", "phone":"+1 423 854 7002", "lastName":"titi" }
+
+###
+
+PUT http://localhost:8080/datas HTTP/1.1
+content-type: application/json
+
+{ "id": 777, "userName": "bateau2", "age": 66 }
+
+###
+
+DELETE http://localhost:8080/datas/777 HTTP/1.1

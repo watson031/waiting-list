@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.WaitingListActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waiting List"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="15dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:progress="50"
+        android:padding="15dp"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Wainting Position:"
+           android:textSize="30dp"
+           android:padding="15dp"/>
+
+       <TextView
+           android:id="@+id/people_waiting"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="10"
+           android:textSize="30dp"
+           android:gravity="center"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Waiting Time: "
+            android:textSize="30dp"
+            android:padding="15dp"/>
+
+        <TextView
+            android:id="@+id/waiting_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2h30"
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_waiting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:visibility="gone"
+
+        android:text="it's your turn, please wait for an availble employee"
+
+        android:gravity="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tires_display"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/quit_queu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUIT QUEUE"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:backgroundTint="#f04f43"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

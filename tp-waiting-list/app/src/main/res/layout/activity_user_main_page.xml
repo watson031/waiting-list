@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/main_page_slider"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        app:auto_cycle="true"
+        app:placeholder="@drawable/promotion_pneus"
+        app:error_image="@drawable/promotion_pneus"
+        app:delay="0"
+        app:period="1000"
+        app:corner_radius="5">
+    </com.denzcoskun.imageslider.ImageSlider>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/imgBtn_change_tire"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/change_tire_image"
+            android:scaleType="fitXY"
+            android:contentDescription="image_change_tire"
+            />
+        <TextView
+            android:id="@+id/tv_changeTires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHANGE YOUR TIRES"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/blue"
+            android:layout_marginStart="15dp" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:src="@drawable/picture_fixing_tires"/>
+</LinearLayout>
